@@ -1,0 +1,54 @@
+.user-list ul {
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: background ease 0.3s, border-width linear 0.1s;
+  border-left: 0px solid #4587ff;
+}
+
+.user:hover {
+  background: #f7f7f7;
+}
+
+.user.ready {
+  border-left: 6px solid #4587ff;
+}
+
+.user__info {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 48%;
+}
+
+.user__info .vote {
+  font-weight: 500;
+}
+
+button.user__remove {
+  margin: 0;
+  padding: 10px;
+  background: none;
+  border: none;
+}
+
+.result-button {
+  margin-right: 20px;
+}
+
+.statistics {
+  padding-top: 20px;
+}
+
+@media (max-width: 986px) {
+  .user {
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+.options button {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.options button .value {
+  font-size: 18px;
+}
+
+.options button .time {
+  position: absolute;
+  right: 4px;
+}
+
+.options button > span {
+  margin: 0 4px;
+  vertical-align: middle;
+}
+
+.options__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 986px) {
+  .options button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .options__buttons {
+    grid-template-columns: 1fr;
+  }
+}
